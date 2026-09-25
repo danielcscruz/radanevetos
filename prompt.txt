@@ -1,0 +1,80 @@
+Atue como um desenvolvedor Front-end Senior e UI/UX Designer especialista em sites de alto padrão. Crie uma aplicação Web Single Page Application (SPA) para o "SÍTIO RADAN", um espaço de eventos refinado localizado em Barreiras - Bahia.
+
+### 1. IDENTIDADE VISUAL E DESIGN SYSTEM
+- **Cores Principais (baseadas na logo fornecida):**
+  - Verde Esmeralda/Florestal Profundo (`#0C3823` ou similar) como cor de fundo primária ou destaque elegante.
+  - Dourado/Champagne Premium (`#D4AF37` ou `#C5A059`) para botões de CTA, bordas, ícones e destaques.
+  - Tons Neutros: Fundo off-white/creme suave (`#FDFBF7`) para seções claras e texto em cinza grafite muito escuro para máxima legibilidade.
+- **Estilo Visual:** Minimalista, moderno, sofisticado e orgânico (Premium Nature). Use tipografia serifada sofisticada para títulos (ex: Playfair Display, Cormorant Garamond ou Cinzel) e sans-serif limpa para textos longos (ex: Plus Jakarta Sans, Inter ou Montserrat).
+- **Animações e Efeitos:** Transições suaves ao rolar a página (scroll animations/Fade-in), micro-interações elegantes em botões e cards com efeito suave de glassmorphism ou bordas finas douradas.
+
+### 2. TECH STACK E ESTRUTURA TÉCNICA
+- **Framework:** Vue.js 3 (Composition API com `<script setup>`).
+- **Roteamento:** Vue Router (para gerenciar a navegação entre a Home e a rota `#/avaliacao`).
+- **Estilização:** Tailwind CSS (ou CSS/SCSS modular elegante).
+- **Ícones:** Lucide-vue-next ou FontAwesome.
+- **Segurança Form:** Implemente validação de formulários e integração/simulação de reCAPTCHA v2/v3 ou Turnstile da Cloudflare.
+
+### 3. NAVEGAÇÃO E HEADER
+- **Logo:** Espaço para a logo do Sítio Radan (Letra 'R' dourada com a árvore estilizada no interior e base em ondas sobre fundo verde escuro).
+- **Menu de Navegação:**
+  - O Sítio (Sobre)
+  - Estrutura & Espaço
+  - Eventos
+  - Galeria
+  - Avaliação (`#/avaliacao`)
+- **Botão CTA Principal (Header):** Botão fixo/destacado "Reservar" apontando diretamente para o link WhatsApp: `https://wa.me/5571999575989?text=Olá!%20Gostaria%20de%20consultar%20a%20disponibilidade%20do%20Sítio%20Radan%20para%20um%20evento.` (deve abrir em nova aba).
+
+### 4. SEÇÕES DA LANDING PAGE PRINCIPAL (`/`)
+
+1. **Hero Section:**
+   - Título impactante: *"O Cenário Perfeito para Mudar a Sua História"* ou *"Inesquecível por Natureza"*.
+   - Subtítulo destacando o charme do Cerrado Baiano em Barreiras - BA.
+   - Chamada para ação (CTA) dupla: Botão "Solicitar Orçamento" (WhatsApp) e "Conheça o Espaço".
+   - Imagem de fundo/Carrossel com fotos de alta resolução representando a flora do Cerrado/Oeste Baiano (ipês, palmeiras, vegetação nativa) e celebrações iluminadas ao ar livre.
+
+2. **Sobre o Sítio Radan:**
+   - Breve narrativa focada em exclusividade, tranquilidade e conexão com a natureza de Barreiras/BA.
+   - Destaques em ícones: Área verde preservada, estrutura moderna, fácil acesso e privacidade total.
+
+3. **Tipos de Eventos Atendidos:**
+   - Cards elegantes para:
+     - **Casamentos:** Cerimônias ao ar livre e recepções inesquecíveis.
+     - **Aniversários & Bodas:** Festas intimistas ou grandes celebrações.
+     - **Eventos Corporativos:** Confraternizações, imersões e workshops.
+     - **Eventos Educacionais & Formaturas:** Encontros acadêmicos e bailes ao ar livre.
+     - **Outros Encontros:** Retiros, piqueniques e reuniões de família.
+
+4. **Galeria de Fotos (Placeholders de Alta Qualidade):**
+   - Grid moderno (masonry ou carrossel) com imagens conceituais de alta qualidade retratando a fauna/flora regional (pássaros do Cerrado, ipês, pôr do sol do Oeste Baiano) e layouts de eventos decorados, preparados para serem facilmente substituídos por imagens reais futuramente.
+
+5. **Diferenciais & Infraestrutura:**
+   - Lista visual de atributos (estacionamento, iluminação cênica, espaço coberto e ao ar livre, suporte técnico, etc.).
+
+6. **Rodapé (Footer):**
+   - Dados de contato, localização em Barreiras - BA, links das redes sociais, link direto para o WhatsApp (`+55 71 99957-5989`) e link para a página de `#/avaliacao`.
+
+---
+
+### 5. PÁGINA ADICIONAL: PESQUISA DE SATISFAÇÃO (`#/avaliacao`)
+
+Crie o componente de rota para a URL `#/avaliacao` com o seguinte conteúdo:
+- **Título:** *"Pesquisa de Satisfação - Sítio Radan"*
+- **Descrição:** *"Sua opinião é fundamental para mantermos a excelência do nosso espaço em Barreiras - BA."*
+- **Formulário de Avaliação (Sistema de Classificação de 1 a 5 Estrelas):**
+  - Categoria 1: *Infraestrutura e Limpeza do Local*
+  - Categoria 2: *Atendimento e Suporte da Equipe*
+  - Categoria 3: *Localização e Acesso*
+  - Categoria 4: *Experiência Geral do Evento*
+- **Campos de Texto:**
+  - Nome Completo (opcional / opcional para anonimato se desejado)
+  - E-mail ou Telefone de contato
+  - Campo amplo (Textarea): *"Dúvidas, Críticas, Elogios e/ou Sugestões"*
+- **Antibot & Validação:**
+  - Incluir um componente visual de Captcha (ex: reCAPTCHA/Turnstile ou desafio matemático simples/interativo antibot).
+  - Bloquear envio do formulário até a validação do captcha e seleção de estrelas nas categorias obrigatórias.
+  - Exibir mensagem elegante de agradecimento após a confirmação do envio.
+
+---
+
+Por favor, forneça o código modular bem estruturado no Vue 3, pronto para rodar com Vite e Tailwind CSS.
