@@ -23,10 +23,9 @@ import campaigns from '../data/campaigns.json'
         <p class="campaign-description">{{ campaign.description }}</p>
 
 
-        <details class="campaign-terms">
-          <summary>Termo de condições</summary>
-          <p>{{ campaign.terms }}</p>
-        </details>
+        <a v-if="campaign.termsUrl" :href="campaign.termsUrl" target="_blank" rel="noopener" class="campaign-terms">
+          Termos e condições <ArrowUpRight :size="15" />
+        </a>
 
         <a href="https://instagram.com/sitioradan" target="_blank" rel="noopener" class="button button-outline">
           {{ campaign.cta }} <ArrowUpRight :size="17" />
